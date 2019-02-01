@@ -31,7 +31,7 @@ function viewCart() {
         } else {
           list_of_items = ` ${cart[i]["itemName"]} at $${cart[i]["itemPrice"]}`;
           list.push(list_of_items)
-          } 
+          }
       return `In your cart, you have, ' + list + last;
     }
 }
