@@ -24,7 +24,7 @@ function viewCart() {
       return `In your cart, you have ${item["itemName"]} at $${item["itemPrice"]}.`
     } else {
       for (var i = 0; i < cart.length; i++) {
-      return `In your cart, you have, ${item["itemName"]} at $${item["itemPrice"]}, and`;
+      return `In your cart, you have, ${item[i].itemName} at $${item[i].itemPrice}, and`;
     }
 }
 }
