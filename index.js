@@ -41,7 +41,12 @@ var sum = 0;
 return sum}
 
 function removeFromCart(item) {
-  // write your code here
+  if (cart.includes(item)) {
+      var removed = cart.splice(print(cart.indexOf(item)),1);    
+  } else {
+    return "That item is not in your cart."
+  }
+
 }
 
 function placeOrder(cardNumber) {
