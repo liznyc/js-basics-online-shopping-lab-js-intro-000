@@ -42,7 +42,8 @@ return sum}
 
 function removeFromCart(item) {
   if (cart.includes(item)) {
-      var removed = cart.splice(print(cart.indexOf(item)),1);
+      var remove = cart.splice(print(cart.indexOf(item)),1);
+      return cart;
   } else {
     return "That item is not in your cart.";
   }
