@@ -17,6 +17,8 @@ let price = Math.floor(Math.random() * 100) + 1;
 }
 
 function viewCart() {
+  let list = []
+  let last = "and";
   if (cart === undefined || cart.length == 0) {
     return "Your shopping cart is empty.";
   } else {
@@ -24,7 +26,13 @@ function viewCart() {
       return `In your cart, you have ${item[0]["itemName"]} at $${item[0]["itemPrice"]}.`
     } else {
       for (var i = 0; i < cart.length; i++) {
-      return `In your cart, you have, ${item[i]["itemName"]} at $${item[i]["itemPrice"], and`;
+        if (i === cart.length -1) {
+          last = `, and ${cart[i]["itemName"]} at $${cart[i]["itemPrice"]}.`
+        } else {
+          list_of_items = ` ${cart[i]["itemName"]} at $${cart[i]["itemPrice"]}`;
+          list.push(list_of_items)
+          } 
+      return `In your cart, you have, ' + list + last;
     }
 }
 }
