@@ -20,11 +20,11 @@ function viewCart() {
   if (cart === undefined || cart.length == 0) {
     return "Your shopping cart is empty.";
   } else {
-    if (cart.length==1) {
-      return `In your cart, you have ${item[0].itemName} at $${item[0].itemPrice}.`
+    if (cart.length===1) {
+      return `In your cart, you have ${item[0]["itemName"]} at $${item[0]["itemPrice"]}.`
     } else {
       for (var i = 0; i < cart.length; i++) {
-      return `In your cart, you have, ${item[i].itemName} at $${item[i].itemPrice}, and`;
+      return `In your cart, you have, ${item[i]["itemName"]} at $${item[i]["itemPrice"], and`;
     }
 }
 }
